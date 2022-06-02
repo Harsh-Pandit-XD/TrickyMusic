@@ -47,7 +47,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["tart", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_private(client: Client, message: Message):
  await message.reply_photo(
